@@ -18,7 +18,7 @@ def hello_world():
     print(data)
 
     if data[0] == "-1\n":
-        return render_template("display_end_template.txt",
+        return render_template("display_end_template.html",
                                index=data[1],es = data[2],ms = data[3])
 
     return render_template("display_template.html",
