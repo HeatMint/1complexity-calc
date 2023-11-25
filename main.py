@@ -127,9 +127,7 @@ while (True):
     else:
         display = open("display.txt", "w")
         display.write("-1\n")
-        display.write("First differentiation found on number:\n")
         display.write(str(result_ms_data[3]) + "\n")
-        display.write("With data(es first, ms next):\n")
         display.write(str(result_es_data) + "\n")
         display.write(str(result_ms_data) + "\n")
         display.close()
