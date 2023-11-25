@@ -15,8 +15,6 @@ def hello_world():
     index = index_file.readline()
     display_file.close()
 
-    print(data)
-
     if data[0] == "-1\n":
         return render_template("display_end_template.html",
                                index=data[1],es = data[2],ms = data[3])
