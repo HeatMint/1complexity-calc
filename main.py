@@ -125,11 +125,12 @@ while (True):
         record_file.close()
 
     else:
-        noticeable = open("noticeable.txt", "a")
-        noticeable.write("First differentiation found on number:\n")
-        noticeable.write(str(result_ms_data[3]) + "\n")
-        noticeable.write("With data(es first, ms next):\n")
-        noticeable.write(str(result_es_data) + "\n")
-        noticeable.write(str(result_ms_data) + "\n")
-        noticeable.close()
+        display = open("display.txt", "w")
+        display.write("-1\n")
+        display.write("First differentiation found on number:\n")
+        display.write(str(result_ms_data[3]) + "\n")
+        display.write("With data(es first, ms next):\n")
+        display.write(str(result_es_data) + "\n")
+        display.write(str(result_ms_data) + "\n")
+        display.close()
         break
